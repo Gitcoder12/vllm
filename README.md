@@ -109,3 +109,24 @@ If you use vLLM for your research, please cite our [paper](https://arxiv.org/abs
 ## Media Kit
 
 - If you wish to use vLLM's logo, please refer to [our media kit repo](https://github.com/vllm-project/media-kit)
+
+
+---
+
+## Branch Activity & Development History
+
+**Audit date:** 2026-11-18 · **Comparison base:** `main`
+
+| Branch | Difference from `main` | Observed work / changed paths |
+|---|---:|---|
+| `docs/portfolio-notes-2026-11-13` | 2 ahead / 3 behind | Fork-aware portfolio notes, activity log, skills notes, company-fit notes, contributor notes and feature upgrade plan |
+| `docs/project-status-2026-11-16-vllm` | 0 / 2 | No unique commits relative to current `main`; branch is behind |
+| `docs/project-status-2026-11-16-vllm-review2` | 1 ahead / 0 behind | Project status snapshot: `PROJECT_STATUS.md`; branch is ahead of current `main` |
+| `fix/cutlass-fp8-error` | 1 / 3 | FP8 fused-MoE oracle change in `vllm/model_executor/layers/fused_moe/oracle/fp8.py` |
+
+### Open pull requests observed during this audit
+
+- [PR #2 — fork-aware project status snapshot](https://github.com/Gitcoder12/vllm/pull/2)
+- [PR #1 — attribution-safe portfolio notes](https://github.com/Gitcoder12/vllm/pull/1)
+
+**Fork note:** This is a fork of an upstream project. Preserve upstream attribution and distinguish local changes from upstream behavior. The FP8 change needs targeted numerical and backend tests on the exact PR head; this branch comparison is not a correctness certification.
