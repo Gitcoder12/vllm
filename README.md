@@ -116,3 +116,21 @@ If you use vLLM for your research, please cite our [paper](https://arxiv.org/abs
 - Serving concurrent chat requests with continuous batching
 - Sharing KV-cache memory across sequences with PagedAttention
 - Streaming generated tokens through an OpenAI-compatible API
+
+
+---
+
+## Upstream Relationship and Comparison
+
+This repository is a fork of [vllm-project/vllm](https://github.com/vllm-project/vllm), the canonical vLLM inference and serving project. vLLM is a large, actively developed LLM serving system with extensive model, hardware and distributed-inference support. This fork should not be presented as a separate serving engine.
+
+### Current fork status (checked 2026-11-19)
+- Fork-only commits: **4**, consisting of documentation/audit guidance, an initial fork-status note, a revert of that status file, and README examples.
+- Upstream commits not present in this fork: **2,580** at the comparison point.
+- No independent serving, scheduler, kernel, model-support or performance capability is established by the inspected fork-only commits.
+
+### What this fork adds
+The current local contribution is documentation and repository-maintenance guidance. The upstream project remains the source of truth for the serving implementation.
+
+### Recommendation
+Use the upstream repository for vLLM functionality and keep this fork only for a clearly scoped experiment or contribution branch. Sync regularly, preserve upstream licensing/attribution, and benchmark any future local code changes against the same upstream revision before claiming a performance or feature difference.
